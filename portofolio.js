@@ -68,7 +68,40 @@ const btns = document.querySelectorAll('.btn');
     menuCircle.style.animation = 'none'
   })
 
+// select porotofolio //
 
+  const allProjectsBtn = document.querySelector('.allProjectsBtn');
+  const uiProjectsBtn = document.querySelector('.uiProjects');
+  const caseStudysBtn = document.querySelector('.caseStudy');
+  allProjectsBtn.style.backgroundColor = "rgb(253, 173, 0)";
+
+  allProjectsBtn.addEventListener('click', ()=> {
+    document.querySelectorAll('.portfolio-item').forEach((project) =>
+       {project.style.display = 'block'})
+    allProjectsBtn.style.backgroundColor = "rgb(253, 173, 0)";
+    uiProjectsBtn.style.backgroundColor = "#353535";
+    caseStudysBtn.style.backgroundColor = "#353535";
+  })
+
+  uiProjectsBtn.addEventListener('click', ()=> {
+    document.querySelectorAll('.uxProject').forEach((uxProject) =>
+      {uxProject.style.display = 'none'})
+    document.querySelectorAll('.uiProject').forEach((uiProject) =>
+      {uiProject.style.display = 'block'})
+    allProjectsBtn.style.backgroundColor = "#353535";
+    uiProjectsBtn.style.backgroundColor = "rgb(253, 173, 0)";
+    caseStudysBtn.style.backgroundColor = "#353535";
+  })
+
+  caseStudysBtn.addEventListener('click', ()=> {
+    document.querySelectorAll('.uiProject').forEach((uiProject) =>
+      {uiProject.style.display = 'none'})
+    document.querySelectorAll('.uxProject').forEach((uxProject) =>
+      {uxProject.style.display = 'block'})
+    allProjectsBtn.style.backgroundColor = "#353535";
+    uiProjectsBtn.style.backgroundColor = "#353535";
+    caseStudysBtn.style.backgroundColor = "rgb(253, 173, 0)";
+  })
 
 // Portofolio show //
 
