@@ -241,7 +241,7 @@ header a:hover{
     border-radius: 50%;
     width: 4.5em;
     height: 0.5em;
-    top: 88vh;
+    top: 83vh;
     cursor: pointer;
     animation: menuCircleOpenMov 0.5s ease-in-out ;
     animation: menuCircleCloseMov 0.5s ease-in-out ;
@@ -534,7 +534,7 @@ header a:hover{
     border: 0.2em solid #353535;
     background-color: #353535;
     cursor: pointer;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: calc(0.4vw + 1vh);  
     border-radius: 0.8em;
     margin: 1em;
@@ -924,7 +924,7 @@ header a:hover{
 
 /* Samsung mobile version */
 
-@media screen and (max-width : 500px) {
+@media screen and (max-width : 450px) {
 
     .topNavContainer {
         width: 100%;
