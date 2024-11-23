@@ -241,7 +241,7 @@ header a:hover{
     border-radius: 50%;
     width: 4.5em;
     height: 0.5em;
-    top: 50em;
+    top: 88vh;
     cursor: pointer;
     animation: menuCircleOpenMov 0.5s ease-in-out ;
     animation: menuCircleCloseMov 0.5s ease-in-out ;
@@ -375,7 +375,7 @@ header a:hover{
     width: 2.5em;
     height: 2.5em;
     margin-top: -1.1em;
-    margin-left: 0.8em;
+    margin-left: 0.71em;
 }
 
 /*#contactcircle img{
@@ -445,252 +445,6 @@ header a:hover{
     width: 90vw;
     height: 90vh;
     clip-path: polygon(2px -1px, 100% 0px, 96.38% 81.75%, 1px 92.95%);
-}
-
-
-@media screen and (max-width : 1420px) {
-
-        .contact {
-        right: -3vw;
-    }
-
-    .homeSectionText h2 {
-        font-size: calc(1.8vw + 1vh);
-    }
-
-    .designer{
-        margin-left: -13em;
-        margin-top: 4em;
-        display: block;
-        width: 80vw;
-        height: 80vh;     
-    }
-}
-
-@media screen and (max-width : 1120px) {
-
-    .heroPic {
-        margin-top: -1em;
-        width: 70%;
-    }
-
-    .homeSectionText h2 {
-        font-size: calc(2vw + 1vh);
-    }
-    
-    .homeSectionText p {
-        position: absolute;
-        width: 74%;
-        padding-top: 1em;
-    }
-
-    .homeSectionText button {
-        position: absolute;
-        margin-top: 16em;
-    }
-
-    .homeSection {
-        margin-bottom: 6em;
-    }
-
-    .designer{
-        margin-left: -8em;
-        margin-top: 7em;
-        display: block;
-        width: 70vw;
-        height: 70vh;     
-    }
-}
-
-@media screen and (max-width : 1090px) {
-    .homeSectionText h1 {
-        font-size: calc(4vw + 1vh);
-    }
-    .homeSectionText h2 {
-        font-size: calc(1.8vw + 1vh);
-    }
-}
-
-@media screen and (max-width : 950px) {
-    
-    .contact {
-        right: -6vw;
-    }
-
-    .homeSectionText h1 {
-        font-size: calc(3.5vw + 1vh);
-    }
-
-    .homeSectionText h2 {
-        font-size: calc(1.5vw + 1vh);
-    }
-
-    .homeSectionText p {
-        width: 70%;
-    }
-
-    .aboutSection {
-        margin-left: -2em;
-    }
-
-    .designer{
-        margin-left: 2em;
-        margin-top: 7em;
-        display: block;
-        width: 50vw;
-        height: 50vh;  
-    }
-}
-
-@media screen and (max-width : 870px){
-    .navSkill{
-        display: none;
-    }
-
-    .logo {
-        width: 100%;
-        margin-left: 4em;
-    }
-
-    .topNavContainer{
-        gap: 6em;
-    }
-
-    .topNavContainer a {
-        font-size: 0.8rem;
-    }
-
-    .topNavContainer li {
-        width: 6em;
-    }
-
-    .heroPic {
-        width: 70%;
-        margin-top: 0em;
-    }
-
-    .analysis {
-        gap: 0em;
-    }
-    .analysis h1{
-        font-size: calc(3vw + 1vh);
-    }
-
-    .analysis p{
-        font-size: calc(1vw + 1vh);
-    }
-
-    .designer{
-        margin-left:3em;
-        margin-top: -2em;
-        display: block;
-        width: 40vw;
-        height: 40vh;  
-    }
-}
-
-@media screen and (max-width : 800px) {
-    
-    .topNavContainer {
-        gap: 4em;
-    }
-
-    .topNavContainer nav ul li {
-        width: 5em;
-    }
-
-    .homeSection{
-        display: block;
-        padding: 2em 1em 3em 1em;
-    }
-
-    .homeSectionText {
-        margin-left: 0em;
-        width: 100%;
-        margin-top: 20vh;
-        text-align: center;
-    }
-
-    .homeSectionText p {
-        width: 100%;
-        text-align: center;
-        position: relative;
-    }
-
-    .homeSectionText button {
-        margin-top: 2em;
-        position: relative;
-    }
-
-    .homeSectionImage {
-        position: absolute;
-        top: 11vh;
-        left: 32.5vw;
-    }
-
-    .heroPic{
-        width: 80%;
-    }
-    
-    .designer{
-        display: none; 
-    }
-    
-    .aboutSection{
-        margin-top: -10em;
-        margin-left: 2em;
-    }
-
-    .aboutSectionText {
-        width: 100%;
-    }
-
-    .aboutSectionText p {
-        text-align: center;
-    }
-
-    .analysis {
-        gap: 5em;
-    }
-}
-
-@media screen and (max-width : 725px){
-    
-    .topNavContainer {
-        width: 95%;
-    }
-    
-    .topNavContainer nav ul {
-        display: none;
-    }
-
-    .contact {
-        display: none;
-    }
-
-    .menu{   
-        width: 20%;
-        display: block;
-    }
-    
-    .closeBox{
-        display: none;
-    }
-
-    .analysis {
-        gap: 1em;
-    }
-
-    .aboutSection {
-        margin-bottom: 5em;
-    }
-}
-
-@media screen and (max-width : 550px) {
-    
-    .heroPic{
-        width: 110%;
-    }
 }
 
 .skillsAndTools {
@@ -920,3 +674,334 @@ header a:hover{
     background:  rgb(189, 130, 2);
   }
 
+
+  @media screen and (max-width : 1420px) {
+
+    .contact {
+        right: -3vw;
+    }
+
+    .homeSectionText h2 {
+        font-size: calc(1.8vw + 1vh);
+    }
+
+    .designer{
+        margin-left: -13em;
+        margin-top: 4em;
+        display: block;
+        width: 80vw;
+        height: 80vh;     
+    }
+}
+
+@media screen and (max-width : 1120px) {
+
+    .heroPic {
+        margin-top: -1em;
+        width: 70%;
+    }
+
+    .homeSectionText h2 {
+        font-size: calc(2vw + 1vh);
+    }
+
+    .homeSectionText p {
+        position: absolute;
+        width: 74%;
+        padding-top: 1em;
+    }
+
+    .homeSectionText button {
+        position: absolute;
+        margin-top: 16em;
+    }
+
+    .homeSection {
+        margin-bottom: 6em;
+    }
+
+    .designer{
+        margin-left: -8em;
+        margin-top: 7em;
+        display: block;
+        width: 70vw;
+        height: 70vh;     
+    }
+}
+
+@media screen and (max-width : 1090px) {
+    .homeSectionText h1 {
+        font-size: calc(4vw + 1vh);
+    }
+    .homeSectionText h2 {
+        font-size: calc(1.8vw + 1vh);
+    }
+    }
+
+    @media screen and (max-width : 950px) {
+
+    .contact {
+        right: -6vw;
+    }
+
+    .homeSectionText h1 {
+        font-size: calc(3.5vw + 1vh);
+    }
+
+    .homeSectionText h2 {
+        font-size: calc(1.5vw + 1vh);
+    }
+
+    .homeSectionText p {
+        width: 70%;
+    }
+
+    .aboutSection {
+        margin-left: -2em;
+    }
+
+    .designer{
+        margin-left: 2em;
+        margin-top: 7em;
+        display: block;
+        width: 50vw;
+        height: 50vh;  
+    }
+    }
+
+    @media screen and (max-width : 870px){
+    .navSkill{
+        display: none;
+    }
+
+    .logo {
+        width: 100%;
+        margin-left: 4em;
+    }
+
+    .topNavContainer{
+        gap: 6em;
+    }
+
+    .topNavContainer a {
+        font-size: 0.8rem;
+    }
+
+    .topNavContainer li {
+        width: 6em;
+    }
+
+    .heroPic {
+        width: 70%;
+        margin-top: 0em;
+    }
+
+    .analysis {
+        gap: 0em;
+    }
+    .analysis h1{
+        font-size: calc(3vw + 1vh);
+    }
+
+    .analysis p{
+        font-size: calc(1vw + 1vh);
+    }
+
+    .designer{
+        margin-left:3em;
+        margin-top: -2em;
+        display: block;
+        width: 40vw;
+        height: 40vh;  
+    }
+}
+
+@media screen and (max-width : 800px) {
+
+    .topNavContainer {
+        gap: 4em;
+    }
+
+    .topNavContainer nav ul li {
+        width: 5em;
+    }
+
+    .homeSection{
+        display: block;
+        padding: 2em 1em 3em 1em;
+    }
+
+    .homeSectionText {
+        margin-left: 0em;
+        width: 100%;
+        margin-top: 20vh;
+        text-align: center;
+    }
+
+    .homeSectionText p {
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .homeSectionText button {
+        margin-top: 2em;
+        position: relative;
+    }
+
+    .homeSectionImage {
+        position: absolute;
+        top: 11vh;
+        left: 32.5vw;
+    }
+
+    .heroPic{
+        width: 80%;
+    }
+
+    .designer{
+        display: none; 
+    }
+
+    .aboutSection{
+        margin-top: -10em;
+        margin-left: 2em;
+    }
+
+    .aboutSectionText {
+        width: 100%;
+    }
+
+    .aboutSectionText p {
+        text-align: center;
+    }
+
+    .analysis {
+        gap: 5em;
+    }
+}
+
+@media screen and (max-width : 725px){
+
+    .topNavContainer {
+        width: 95%;
+    }
+
+    .topNavContainer nav ul {
+        display: none;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .menu{   
+        width: 20%;
+        display: block;
+    }
+
+    .closeBox{
+        display: none;
+    }
+
+    .analysis {
+        gap: 1em;
+    }
+
+    .aboutSection {
+        margin-bottom: 5em;
+    }
+}
+
+/* mobile version */
+
+@media screen and (max-width : 550px) {
+
+    .heroPic{
+        width: 110%;
+    }
+}
+
+/* Samsung mobile version */
+
+@media screen and (max-width : 350px) {
+
+    .topNavContainer {
+        width: 100%;
+        gap: 7.5em;
+    }
+
+    .logo{
+        margin-left: 2em;
+    }
+
+    .menu {
+        width: 18%;
+    }
+
+    .heroPic {
+        margin-top: -2vh;
+        margin-left: -1.5vw;
+        width: 120%;
+    }
+    .homeSectionText {
+        margin-top: 7em;
+    }
+
+    .homeSectionText h1 {
+        font-size: 1.8rem;
+    }
+
+    .homeSectionText h2 {
+        font-size: 1rem;
+    }
+
+    .homeSectionText p {
+        margin-top: 1em;
+        font-size: 0.8rem;
+    }
+
+    .homeSectionText button {
+        font-size: 1rem;
+        margin-top: 1em;
+    }
+
+    .aboutSection {
+        margin-left: 3em;
+    }
+
+    .aboutSectionText h1 {
+        font-size: 1.8rem;
+    }
+
+    .aboutSectionText p {
+        font-size: 1rem;
+        padding: 0 1.4em;
+    }
+
+    .analysis {
+        gap: 0.5em;
+    }
+
+    .skillsImages {
+        padding: 0 1em;
+    }
+
+    .skillsImages div {
+        padding: 2em 1em 0.5em 1em;
+        margin: 1em 1em 2em 1em;
+        width: 20%;
+    }
+
+    .workProjectsImages {
+        column-gap: 10em;
+    }
+
+    .workProjectsImages div {
+        width: 100%;
+    }
+    .projectShow div h3 {
+        font-size: 1.5rem;
+        padding-right: 2em;
+    }
+}
