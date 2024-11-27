@@ -28,7 +28,7 @@ body{
     background-color: #222222;
     min-height: 100vh;
     background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
-    background-image: url('hero graphics/stars.jpg');
+    background-image: url('hero graphics/stars-min.jpg');
     background-blend-mode: color-dodge;
     background-repeat: repeat;
     background-size: 100%;
@@ -70,7 +70,7 @@ body{
 }
 
 */
-
+/*
 header{
     display: flex;
     justify-content: space-between !important;
@@ -152,6 +152,84 @@ header a:hover{
 .closeBox{
     display: none;
 }
+
+*/
+
+header{
+    display: flex;
+    justify-content: center !important;
+    gap: 7vw;
+    width: 80%;
+    background-color: #191919;
+    margin: 1em auto 0 auto;
+    padding: 1em 0em;
+    place-self: center;
+    place-items: center;
+    border-radius: 3em;
+    position: relative;
+}
+  
+.logo{
+    width: 7vw;
+}
+  
+header nav ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    font-family: 'poppins';
+    list-style-type: none;
+    padding: 0em;
+    margin: auto;
+}
+  
+header nav ul a {
+    max-width: fit-content;
+    text-decoration: none;
+    font-size: calc(1vw + 0.001vh); 
+    color: white;
+}
+  
+li{
+    width: fit-content;
+    padding: 0 2em;
+}
+  
+.default{
+    color: rgb(253, 173, 0);
+}
+  
+header a:hover{
+    color: rgb(253, 173, 0);
+}
+  
+.contact{ 
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+  
+.contact img {
+    width: 1.5vw;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+    font-family: 'poppins';
+    font-size: calc(1vw + 0.001vh); 
+}
+  
+.menu{
+    display: none;
+} 
+  
+.closeBox{
+    display: none;
+}
+
+/* main sectio */
 
 .mainSection{
     width: 100%;
@@ -675,10 +753,10 @@ header a:hover{
   }
 
 
-  @media screen and (max-width : 1420px) {
+@media screen and (max-width : 1420px) {
 
-    .contact {
-        right: -3vw;
+    .heroHeaderCircle {
+        top: 75vh;
     }
 
     .homeSectionText h2 {
@@ -686,7 +764,7 @@ header a:hover{
     }
 
     .designer{
-        margin-left: -13em;
+        margin-left: -14em;
         margin-top: 4em;
         display: block;
         width: 80vw;
@@ -695,6 +773,10 @@ header a:hover{
 }
 
 @media screen and (max-width : 1120px) {
+
+    .heroHeaderCircle {
+        top: 83vh;
+    }
 
     .heroPic {
         margin-top: -1em;
@@ -713,7 +795,8 @@ header a:hover{
 
     .homeSectionText button {
         position: absolute;
-        margin-top: 16em;
+        margin-top: 13.5em;
+        font-size: 0.9rem;
     }
 
     .homeSection {
@@ -736,14 +819,9 @@ header a:hover{
     .homeSectionText h2 {
         font-size: calc(1.8vw + 1vh);
     }
-    }
+}
 
-    @media screen and (max-width : 950px) {
-
-    .contact {
-        right: -6vw;
-    }
-
+@media screen and (max-width : 950px) {
     .homeSectionText h1 {
         font-size: calc(3.5vw + 1vh);
     }
@@ -756,12 +834,20 @@ header a:hover{
         width: 70%;
     }
 
+    .homeSectionText button {
+        font-size: 0.8rem;
+    }
+
     .aboutSection {
-        margin-left: -2em;
+        /*margin-left: -2em;*/
+    }
+
+    .aboutSectionImage{
+        margin-left: -1em; 
     }
 
     .designer{
-        margin-left: 2em;
+        margin-left: 1em;
         margin-top: 7em;
         display: block;
         width: 50vw;
@@ -769,31 +855,26 @@ header a:hover{
     }
     }
 
-    @media screen and (max-width : 870px){
+@media screen and (max-width : 870px){
     .navSkill{
         display: none;
     }
 
-    .logo {
-        width: 100%;
-        margin-left: 4em;
-    }
-
     .topNavContainer{
-        gap: 6em;
+        gap: 3em;
     }
 
     .topNavContainer a {
         font-size: 0.8rem;
     }
 
-    .topNavContainer li {
-        width: 6em;
-    }
-
     .heroPic {
         width: 70%;
         margin-top: 0em;
+    }
+
+    .homeSectionText button {
+        font-size: 0.7rem;
     }
 
     .analysis {
@@ -817,13 +898,8 @@ header a:hover{
 }
 
 @media screen and (max-width : 800px) {
-
     .topNavContainer {
-        gap: 4em;
-    }
-
-    .topNavContainer nav ul li {
-        width: 5em;
+        gap: 2em;
     }
 
     .homeSection{
@@ -845,7 +921,9 @@ header a:hover{
     }
 
     .homeSectionText button {
+        right: 0.3vw;
         margin-top: 2em;
+        font-size: 1rem;
         position: relative;
     }
 
@@ -865,10 +943,10 @@ header a:hover{
 
     .aboutSection{
         margin-top: -10em;
-        margin-left: 2em;
     }
 
     .aboutSectionText {
+        margin-left: 0.8em;
         width: 100%;
     }
 
@@ -886,24 +964,7 @@ header a:hover{
     .topNavContainer {
         width: 95%;
     }
-
-    .topNavContainer nav ul {
-        display: none;
-    }
-
-    .contact {
-        display: none;
-    }
-
-    .menu{   
-        width: 20%;
-        display: block;
-    }
-
-    .closeBox{
-        display: none;
-    }
-
+    
     .analysis {
         gap: 1em;
     }
@@ -915,10 +976,59 @@ header a:hover{
 
 /* mobile version */
 
+@media screen and (max-width: 600px) {
+
+    .topNavContainer a {
+        font-size: 0.7rem;
+    }
+}
+
 @media screen and (max-width : 550px) {
+
+    .logo{
+        width: 12vw;
+    }
+
+    .topNavContainer nav ul{
+        display: none;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .topNavContainer {
+        gap: 52vw;
+    }
+
+    .topNavContainer nav .menu {
+        display: block;
+        width: 5vw;
+    }
+
+    .homeSectionImage {
+        top: 9vh;
+    }
 
     .heroPic{
         width: 110%;
+    }
+}
+
+/* mobile version for resume */
+
+@media screen and (max-width : 500px) {
+
+    .homeSectionText h1 {
+        margin-left: 0.5em;
+    }
+
+    .homeSectionText h2 {
+        margin-left: 1em;
+    }
+
+    .homeSectionText button {
+        right: -0.5vw;
     }
 }
 
@@ -928,15 +1038,6 @@ header a:hover{
 
     .topNavContainer {
         width: 100%;
-        gap: 7.5em;
-    }
-
-    .logo{
-        margin-left: 2em;
-    }
-
-    .menu {
-        width: 18%;
     }
 
     .heroPic {
@@ -949,10 +1050,12 @@ header a:hover{
     }
 
     .homeSectionText h1 {
+        margin-left: 0em;
         font-size: 1.8rem;
     }
 
     .homeSectionText h2 {
+        margin-left: 0em;
         font-size: 1rem;
     }
 
@@ -962,6 +1065,7 @@ header a:hover{
     }
 
     .homeSectionText button {
+        right : -1SSSvw;
         font-size: 1rem;
         margin-top: 1em;
     }
