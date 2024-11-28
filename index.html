@@ -26,24 +26,16 @@
             </div>
         </div>-->
         <header class="topNavContainer" id="Home">
-            <a href="#home"><img src="hero graphics/Icons/white logo.png" alt="" class="logo"></a>
+            <a href="#Home"><img src="hero graphics/Icons/white logo.png" alt="" class="logo"></a>
             <nav>
                 <ul>
                     <a href="#Home" class="default"><li>Home</li></a>
-                    <a href="#About"><li>About me</li></a>
+                    <a href="#About"><li class="navAbout">About me</li></a>
                     <a href="#Skills" class="navSkill"><li>Skills & Tools</li></a>
-                    <a href="#Projects"><li>Projects</li></a>
+                    <a href="#Projects" class="navProjects"><li>Projects</li></a>
                 </ul>
                 <div class="menuConatiner">
                     <img src="hero graphics/menuWhite.png" alt="" class="menu">
-                    <div class="closeBox">
-                            <a href="#home"><h1>Home</h1></a>
-                            <a href="#about"><h1>About me</h1></a>
-                            <a href="#posters"><h1>Posters</h1></a>
-                            <a href="#ui/ux"><h1>UI/UX</h1></a>
-                            <a href="#contact"><h1>Contact</h1></a>
-                            <img src="hero graphics/close.png" alt="" class="close">
-                    </div>
                 </div>
             </nav>
             <div class="contact">
@@ -51,6 +43,19 @@
                 <a href="Contact">Contact</a>
             </div>
         </header>
+        <div class="menuBox">
+            <div class="menuBoxHeader">
+                <a href="#Home"><img src="hero graphics/Icons/white logo.png" alt="" class="logo"></a>
+                <img src="hero graphics/close.png" alt="" class="close">
+            </div>
+            <div class="menuBoxText">
+                <a href="#Home"><h1>Home</h1></a>
+                <a href="#About"><h1>About me</h1></a>
+                <a href="#Skills"><h1>Skills & Tools</h1></a>
+                <a href="#Projects"><h1>Projects</h1></a>
+                <a href="#Contact"><h1>Contact</h1></a>
+            </div>
+        </div>
         <div class="mainSection">
             <section class="homeSection">
                 <div class="homeSectionText">
@@ -77,10 +82,10 @@
                         </lord-icon></a>
         
                     <a href="#About"><span class="heroHeaderCircle" id="aboutcircle" title="About Me"><lord-icon
-                        src="https://cdn.lordicon.com/ncxoarcp.json"
-                        trigger="hover"
-                        colors="primary:#ffffff">
-                    </lord-icon></span></a>
+                            src="https://cdn.lordicon.com/ncxoarcp.json"
+                            trigger="hover"
+                            colors="primary:#ffffff">
+                        </lord-icon></span></a>
 
                     <a href="#Skills"><span class="heroHeaderCircle" id="workcircle" title="Skills">
                         <lord-icon
@@ -183,7 +188,7 @@
                 </div>
                 <div class="workProjectsImages">
                     <div class="portfolio-item btn uxProject" data-project="project1">
-                        <img src="MyWorksImgs/furniture.png" alt="">
+                        <img src="myWorksImgs/furniture.png" alt="">
                         <p>Abiosa furniture website UI/UX caseStudy</p>
                     </div>
                     <div class="portfolio-item btn uxProject" data-project="project2">
@@ -221,6 +226,25 @@
                     </div>
                 </div>
             </section>
+            <section class="contactSection" id="Contact">
+                <div class="contactTextAnimation">
+                    <h1 class="contatcAnimation">Contact to start!</h1>
+                </div>
+                <div class="contactText">
+                    <div class="emailContainer">
+                        <label for="email">Email Address </label>
+                        <input type="email" id="email" title="Your Email">
+                    </div>
+                    <div class="messageContainer">
+                        <label for="message">Your Message </label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit Message</button>
+                </div>
+            </section>
+            <div class="rights">
+                <p>John Designs © 2024. All rights reserved</p>
+            </div>
         </div>
     </div>
 
