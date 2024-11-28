@@ -1,4 +1,3 @@
-
 // btn hover //
 
 const btns = document.querySelectorAll('.btn');
@@ -181,20 +180,24 @@ document.addEventListener('DOMContentLoaded', () => {
 // menu in monile version // 
 
   const menu = document.querySelector('.menu');
-  const close =document.querySelector('.close')
+  const menuBox = document.querySelector('.menuBox')
+  const menuClose =document.querySelector('.close')
+  const menuBoxText = document.querySelectorAll('.menuBoxText a h1')
 
-  menu.addEventListener('click', result);
+  menuBox.style.display = "none"
+   
+  menu.addEventListener('click', (e) => {
+      e.preventDefault();
+      menuBox.style.display = 'block';
+  });
 
+  menuBoxText.forEach(element => {
+    element.addEventListener('click', () =>{
+      menuBox.style.display = 'none';
+    })
+  })
 
-  function result (e) {
-    e.preventDefault();
-    menu.style.display = 'none';
-    closeBox.style.display = 'block';
-  }
-
-  close.addEventListener('click', result2)
-
-  function result2 (x) {
+  menuClose.addEventListener('click', (x) =>{
     x.preventDefault();
-    menu.style.display = 'block';
-  }
+    menuBox.style.display = 'none';
+  })
