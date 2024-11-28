@@ -225,7 +225,7 @@ header a:hover{
     display: none;
 } 
   
-.closeBox{
+.menuBox{
     display: none;
 }
 
@@ -344,7 +344,7 @@ header a:hover{
 #homecircle{
     width: 3.9em;
     height: 0.1vh; 
-    right: 5.5vw;
+    right: 4.85vw;
     transform: translateY(-20em);
     animation: homeCircleMov 0.5s ease-in-out
 }
@@ -375,7 +375,7 @@ header a:hover{
 #aboutcircle{
     width: 3.9em; 
     height: 0.1vh; 
-    right: 5.5vw;
+    right: 4.85vw;
     transform: translateY(-15em);
     animation: aboutCircleMove 0.4s ease-in-out;
 }
@@ -405,7 +405,7 @@ header a:hover{
 #workcircle {
     width: 3.9em; 
     height: 0.1vh; 
-    right: 5.5vw;
+    right: 4.85vw;
     transform: translateY(-10em);
     animation: workCircleMov 0.3s ease-in-out
 }
@@ -435,7 +435,7 @@ header a:hover{
 #contactcircle {
     width: 3.9em; 
     height: 0.1vh; 
-    right: 5.5vw;
+    right: 4.85vw;
     transform: translateY(-5em);
     animation: contactCircleMov 0.2s ease-in-out
 }
@@ -718,7 +718,7 @@ header a:hover{
     margin-bottom: 0.5em;
 }
 
-/* Scrollable Content */
+/* Scrollable for projects */
 .scrollable-content {
     max-height: 100vh; 
     overflow-y: auto; 
@@ -730,27 +730,129 @@ header a:hover{
     border-radius: 1.5em;
     margin-bottom: 15px;
   }
-  
-  /* Add scrollbar styling for better appearance */
-  .scrollable-content::-webkit-scrollbar {
-    width: 8px;
-  }
 
-  .scrollable-content::-webkit-scrollbar-track {
+.scrollable-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
     margin: 3em 0;
     background: #232323; 
     border-radius: 10px;
 }
 
-  .scrollable-content::-webkit-scrollbar-thumb {
+.scrollable-content::-webkit-scrollbar-thumb {
     background: rgb(253, 173, 0);
     border-radius: 4px;
-  }
+}
   
-  .scrollable-content::-webkit-scrollbar-thumb:hover {
+.scrollable-content::-webkit-scrollbar-thumb:hover {  
     cursor: pointer;
     background:  rgb(189, 130, 2);
+}
+
+.contactSection {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    color: white;
+    font-family: 'poppins';
+    padding: 10em;
+    margin-top: 10em;
+    border-top: 0.2em solid rgba(255, 255, 255, 0.144);
+    border-bottom: 0.2em solid rgba(255, 255, 255, 0.144);
+}
+
+.contactText div{
+    display: flex;
+    gap: 3vw;
+    margin-bottom: 2em;
+    align-items: center;
+}
+
+.contactText div input {
+    background-color: rgba(0, 0, 0, 0.136);
+    border: 0.2em solid rgba(255, 204, 0, 0.974) ;
+    border-radius: 0.5em;
+    color: white;
+}
+
+.contactText div label {
+    font-size: calc(0.8vw + 1vh);
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.emailContainer input {
+    height: 4vh;
+    min-width: 15vw;
+    font-size: calc(0.3vw + 1vh);
+    font-family: 'poppins';
+}
+
+.messageContainer textarea {
+    min-width: 15vw;
+    max-width: 15vw;
+    min-height: 20vh;
+    max-height: 50vh;
+    background-color: rgba(0, 0, 0, 0.136);
+    border: 0.2em solid rgba(255, 204, 0, 0.974) ;
+    border-radius: 0.5em;
+    color: white;
+    font-size: calc(0.5vw + 1vh);
+    font-family: 'poppins';
+}
+
+.contactText button {
+    font-size: calc(0.5vw + 1vh);
+    padding: 1.5em;
+    margin-top: 2em;
+    background-color: #383838;
+    color: white;
+    border: 0.2em solid #383838;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.contactText button:hover {
+    border: 0.2em solid rgb(253, 173, 0);
+    animation: submitAnimation 1000ms;
+}
+
+@keyframes submitAnimation {
+    from {
+        transform: translateY(0em);
+    }
+    to{
+        transform: translateY(-0.5em);
+    }
+}
+
+.contatcAnimation {
+    font-size: calc(3vw + 1vh);
+    font-weight: 400;
+    background: linear-gradient(80deg, rgb(245, 245, 245), rgb(255, 255, 255), rgb(202, 202, 202)) ;
+    background-size: 200%; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    animation: color 2s infinite;
+    text-align: center;
+    margin-top: 10vh;
   }
+  
+  @keyframes color {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: -200%; 
+    }
+}
+
+.rights p {
+    color: rgba(255, 255, 255, 0.648);
+    font-family: 'poppins';
+}
 
 
 @media screen and (max-width : 1420px) {
@@ -810,6 +912,19 @@ header a:hover{
         width: 70vw;
         height: 70vh;     
     }
+
+    .contactText div {
+        display: block;
+    }
+
+    .emailContainer input {
+        min-width: 30vw;
+    }
+
+    .messageContainer textarea {
+        margin-top: 1em;
+        min-width: 30vw;
+    }
 }
 
 @media screen and (max-width : 1090px) {
@@ -819,6 +934,7 @@ header a:hover{
     .homeSectionText h2 {
         font-size: calc(1.8vw + 1vh);
     }
+
 }
 
 @media screen and (max-width : 950px) {
@@ -853,7 +969,33 @@ header a:hover{
         width: 50vw;
         height: 50vh;  
     }
+
+    .contactSection {
+        padding: 4em;
     }
+
+    .contatcAnimation {
+        margin-top: 0vh;
+        margin-bottom: 6vh;
+    }
+
+    .contactText {
+        justify-content: center;
+    }
+
+    .contactSection {
+        display: block;
+    }
+
+    .emailContainer input {
+        min-width: 100%;
+        margin-top: 1em;
+    }
+
+    .messageContainer textarea{
+        min-width: 100%;
+    }
+}
 
 @media screen and (max-width : 870px){
     .navSkill{
@@ -1004,6 +1146,53 @@ header a:hover{
     .topNavContainer nav .menu {
         display: block;
         width: 5vw;
+        cursor: pointer;
+    }
+
+    .menuBox{
+        display: none;
+        position: fixed;
+        background-color: #191919;
+        z-index: 10;
+        width: 85%;
+        height: 100%;
+        top: 0vh;
+        left: 0vw;
+        padding: 8vw;
+    }
+
+    .menuBoxHeader{
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        gap: 51vw;
+        margin-top: 0.3em;
+        margin-left: 0.2em;
+    }
+
+    .menuBoxText{
+        text-align: center;
+        margin-top: 10em;
+    }
+
+    .menuBoxText a {
+        text-decoration: none;
+    }
+
+    .menuBoxText a h1{
+        color: white;
+        font-family: "poppins";
+        margin-bottom: 1.5em;
+    }
+
+    .menuBoxDefault{
+        color: rgb(253, 143, 0);
+    }
+
+    .close{
+        width: 4.5vw;
+        height: 2.8vh;
+        cursor: pointer;
     }
 
     .homeSectionImage {
